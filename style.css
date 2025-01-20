@@ -1,0 +1,91 @@
+/* Reset some common elements */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default border and outline styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Clear inherited typography styles */
+body,
+input,
+textarea,
+button {
+  font-family: "Work Sans", serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0px auto;
+  background: rgb(247, 247, 247);
+}
+
+button {
+  border: none;
+}
+
+.c-yellow{
+  color: rgb(254, 163, 1);
+}
+
+nav {
+  max-width: 1160px;
+  max-height: 62px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo h3 {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-menu ul li {
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.btn {
+  width: 197px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 30px;
+}
