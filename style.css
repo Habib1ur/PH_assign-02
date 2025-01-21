@@ -45,6 +45,28 @@ button {
   color: rgb(254, 163, 1);
 }
 
+.c-black{
+  color: rgb(17, 17, 17);
+}
+
+.c-blue{
+    color: rgb(1, 172, 253);
+}
+
+.c-sky{
+  color: rgb(5, 212, 223)
+}
+
+
+.c-violate{
+  color: rgb(93, 88, 239);
+}
+
+header,main{
+  max-width: 1160px;
+  margin: 0px auto;
+}
+
 nav {
   max-width: 1160px;
   max-height: 62px;
@@ -88,4 +110,38 @@ nav {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 30px;
+}
+
+.banner{
+  max-width: 1160px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.banner-text{
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.banner-text h3{
+  font-family: Quicksand;
+font-size: 3.5rem;
+font-weight: 700;
+line-height: 61px;
+}
+
+.banner-text p{
+  color: rgb(17, 17, 17);
+font-family: Quicksand;
+font-size: 1.25rem;
+font-weight: 400;
+line-height: 25px;
+}
+
+.banner-text button{
+  background:  rgb(17, 17, 17);
 }
