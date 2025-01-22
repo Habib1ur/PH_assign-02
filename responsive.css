@@ -1,3 +1,117 @@
 @media screen and (max-width:576px) {
-    
+    nav{
+        border: 0.5px solid rgb(254, 163, 1);
+        padding: 12px 16px;
+        margin: unset;
+    }
+
+    .nav-menu,nav button{
+        display: none;
+    }
+
+    .hamburger-icon{
+        display: block;
+        font-size: 30px;
+    }
+
+    .banner{
+        margin: 0px 10%;
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .banner-text p{
+        /* max-width: 357px; */
+/* height: 54px; */
+font-size: 1rem;
+font-weight: 500;
+line-height: 18px;
+    }
+
+    .banner-text button{
+        width: 131px;
+height: 42px;font-size: 1rem;
+font-weight: 700;
+line-height: 30px;
+    }
+    .class{
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .class h3{
+        font-size: 1.6rem;
+    }
+    .c-class p{
+        font-size: 0.6rem;
+        max-width: 193px;font-weight: 500;
+        line-height: 19.16px;
+        margin: 22px auto;
+    }
+    .class-card{
+        flex-direction: column;
+        gap: 13px;
+
+    }
+
+    .c-class{
+        width: 357px;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .stories{
+        gap: 20px;
+        padding: 40px 0px;
+    }
+
+    .story-card-1{
+        display: none;
+    }
+
+    .c-story-card{
+        margin: 0px 16px;
+    }
+
+    .story-card-r{
+        gap: 11.3px;
+        width: 100%;
+    }
+
+    .stories button{
+        width: 134px;
+height: 30px;font-size: 1rem;
+font-weight: 700;
+line-height: 30px;
+    }
+    .c-date-r{
+        width: 103px;
+        font-size: .6rem;
+        border-radius: 28.54px;
+    }
+
+.story-card-content{
+    margin-left: 22px;
+    }
+
+    /* footer part start */
+
+    footer{
+        padding: 60px 0px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .footer-content p{
+        margin: 22px 0px 32px;
+    }
 }

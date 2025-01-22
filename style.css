@@ -61,21 +61,30 @@ button {
   color: rgb(93, 88, 239);
 }
 
-/* section, */
-/* main, */ header
- {
+/* Header part start */
+marquee {
+  background: rgb(254, 163, 1);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  padding: 10px 0px;
+}
+header {
   max-width: 1440px;
   margin: 0px auto;
 }
 
 nav {
   max-width: 1160px;
-  max-height: 62px;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.hamburger-icon {
+  display: none;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -117,8 +126,12 @@ nav {
   max-width: 1160px;
   margin: 0px auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
+}
+
+.banner img {
+  max-width: 468px;
 }
 
 .banner-text {
@@ -171,11 +184,12 @@ nav {
 }
 
 .class-card {
+  width: 100%;
+  margin: 0px auto;
+  max-width: 1160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-items: center;
-  gap: 28px;
 }
 
 .c-class {
@@ -188,8 +202,8 @@ nav {
 }
 
 .c-class img {
-  width: 137px;
-  height: 137px;
+  max-width: 137px;
+  max-height: 137px;
   margin: 52px auto 32px;
 }
 
@@ -208,6 +222,7 @@ nav {
   font-weight: 500;
   line-height: 28.3px;
   text-align: center;
+  width: 287px;
   margin: 33px auto 38px;
 }
 
@@ -215,7 +230,6 @@ nav {
   box-sizing: border-box;
   border: 0.94px solid rgb(222, 245, 255);
   border-radius: 18.86px;
-
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
   background: linear-gradient(
       180deg,
@@ -296,7 +310,7 @@ nav {
   font-weight: 900;
 }
 
-.stories{
+.stories {
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -304,116 +318,194 @@ nav {
   align-items: center;
   margin: 0px auto;
   padding: 60px 0px;
-  background: url('assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  background: url("assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   max-width: 1440px;
 }
 
-.stories h3{
+.stories h3 {
   color: rgb(0, 0, 0);
-font-family: Quicksand;
-font-size: 2.8rem;
-font-weight: 700;
-line-height: 57.5px;
-text-align: center;
+  font-family: Quicksand;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 57.5px;
+  text-align: center;
 }
 
-.story-card{
- display: flex;
- gap: 20px;
- max-width: 1160px;
- margin: 0px auto;
+.story-card {
+  display: flex;
+  gap: 20px;
+  max-width: 1160px;
+  margin: 0px auto;
 }
 
-.story-card-r{
+.story-card-r {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 602px;
 }
 
-.c-story-card{
+.c-story-card {
   display: flex;
-  flex-direction: column;border-radius: 16px;
+  flex-direction: column;
+  border-radius: 16px;
   background-color: rgb(255, 255, 255);
 }
 
-.c-story-card img{
+.c-story-card img {
   border-radius: 16px 16px 0px 0px;
-background: url(),rgb(217, 217, 217);
+  background: url(), rgb(217, 217, 217);
 }
 
-
-.date-l{
+.date-l {
   width: 174.51px;
-height: 47.93px;border-radius: 47.93px;
-background: rgb(60, 216, 232);
-display: flex;
-align-items: center;
-justify-content: center;
-color: rgb(255, 255, 255);
-font-family: Raleway;
-font-size: 1rem;
-font-weight: 500;
-line-height: 28.76px;
-margin-top: -24px;
+  height: 47.93px;
+  border-radius: 47.93px;
+  background: rgb(60, 216, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28.76px;
+  margin-top: -24px;
 }
 
-.story-card-content{
+.story-card-content {
   margin-left: 38px;
 }
 
-.story-card-content h3{
+.story-card-content h3 {
   color: rgb(0, 0, 0);
-font-family: Quicksand;
-font-size: 1.5rem;
-font-weight: 700;
-line-height: 38.35px;
-text-align: left;
-margin: 37px 0px 52px;
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 38.35px;
+  text-align: left;
+  margin: 37px 0px 52px;
 }
 
-.story-card-content p{
-max-width: 435px;
-color: rgb(102, 102, 102);
-font-family: Raleway;
-font-size: 1rem;
-font-weight: 500;
-line-height: 28.76px;
+.story-card-content p {
+  max-width: 435px;
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28.76px;
 }
 
-.story-card-r .c-story-card .story-card-content h3{
+.story-card-r .c-story-card .story-card-content h3 {
   color: rgb(0, 0, 0);
-font-family: Quicksand;
-font-size: 1rem;
-font-weight: 700;
-line-height: 28.76px;
+  font-family: Quicksand;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28.76px;
 }
 
-.c-date-r{
+.c-date-r {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 175px;
-  height: 40px;border-radius: 47.93px;
+  height: 40px;
+  border-radius: 47.93px;
   margin-top: -20px;
   background: rgb(149, 178, 38);
   color: rgb(255, 255, 255);
-font-family: Raleway;
-font-size: 1rem;
-font-weight: 500;
-line-height: 28.76px;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28.76px;
 }
 
-.date-r-2{
-background: rgb(93, 88, 240);
+.date-r-2 {
+  background: rgb(93, 88, 240);
 }
 
-.date-r-4{
+.date-r-4 {
   width: 128px;
 }
 
-.stories button{
-  
-background: rgb(17, 17, 17);
-font-weight: 700px;
+.stories button {
+  background: rgb(17, 17, 17);
+  font-weight: 700px;
 }
+
+/* footer part start */
+
+footer {
+  background: rgb(1, 172, 253);
+  padding: 123px 0px 174px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 1071px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text-title {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text-title h3 {
+  max-width: 206px;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 39.51px;
+}
+
+.footer-text p {
+  max-width: 400px;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 35px;
+}
+
+.footer-nav h3 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+.footer-nav ul li {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-links h3 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+/* footer part end */
